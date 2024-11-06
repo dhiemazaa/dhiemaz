@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #323641;    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.dashboard-container {
+    text-align: center;
+}
+
+.mailbox-image {
+    max-width: 30%; /* Agar gambar responsif */
+    height: auto; /* Menjaga rasio aspek gambar */
+    cursor: pointer; /* Menunjukkan bahwa gambar dapat diklik */
+    transition: transform 0.3s ease; /* Transisi untuk efek hover */
+    margin: 50px;
+}
+
+.mailbox-image:hover {
+    transform: scale(1.1); /* Membesarkan gambar saat hover */
+}
+
+.mailbox-image.clicked {
+    transform: scale(0.9); /* Mengecilkan gambar saat diklik */
+    transition: transform 0.5s ease; /* Transisi untuk efek klik */
+}

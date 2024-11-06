@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Kotak Pos</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <img src="Lovepik_com-611697538-Red postbox creative illustration.png" alt="Kotak Pos" class="mailbox-image" id="mailboxImage">
+    </div>
+
+    <script>
+        // Mengarahkan ke halaman pesan saat gambar diklik
+        document.getElementById('mailboxImage').addEventListener('click', function() {
+            // Menambahkan kelas animasi sebelum berpindah halaman
+            this.classList.add('clicked');
+            setTimeout(() => {
+                window.location.href = 'messages.html'; // Ganti dengan nama file pesan Anda
+            }, 500); // Waktu delay untuk animasi
+        });
+    </script>
+</body>
+</html>
